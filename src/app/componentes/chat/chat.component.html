@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div class="container">
+  <h1 *ngIf="mensajeBienvenida" class="text-center my-4">{{ mensajeBienvenida }}</h1>
+  <h1 class="text-center my-4">¿Cómo te sientes hoy?</h1>
+</div>
+<div class="chat-container">
+  <div class="messages-container">
+    <div *ngFor="let message of messages" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+      <app-chat-message [message]="message"></app-chat-message>
+    </div>
+  </div>
+  <div class="input-container">
+    <input [(ngModel)]="userInput" (keydown.enter)="sendMessage()" placeholder="Escribe un mensaje...">
+    <button (click)="sendMessage()">Enviar</button>
+  </div>
+</div>

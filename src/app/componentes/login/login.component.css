@@ -1,0 +1,87 @@
+:host {
+  display: block;
+}
+
+  .login-wrapper {
+  width: 100%;
+  height: 100%;
+  }
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font: 400 23px/1.5 Montserrat, sans-serif;
+    color: #3e81b3;
+    text-align: center;
+    padding: auto;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 431px;
+    max-width: 100%;
+    margin-top: 196px;
+  }
+  .logo {
+    width: 172px;
+    max-width: 100%;
+    aspect-ratio: 1.39;
+    object-fit: contain;
+  }
+  .input-field {
+    font-family: Montserrat, sans-serif;
+    border-radius: 100px;
+    background-color: #e8f0fe;
+    width: 100%;
+    padding: 21px 26px;
+    margin-top: 50px;
+    border: none;
+  }
+  .login-button {
+    font-family: Montserrat, sans-serif;
+    border-radius: 100px;
+    background-color: #00bfff;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px 60px;
+    margin-top: 32px;
+    border: none;
+    cursor: pointer;
+  }
+  .forgot-password {
+    font-family: Montserrat, sans-serif;
+    margin-top: 50px;
+    color: #3e81b3;
+    text-decoration: none;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  @media (max-width: 991px) {
+    .login-container {
+      padding: 0 20px;
+    }
+    .login-form {
+      margin-top: 40px;
+    }
+    .input-field {
+      margin-top: 40px;
+    }
+    .login-button {
+      padding: 20px 23px;
+    }
+    .forgot-password {
+      margin-top: 40px;
+    }
+  }
+  

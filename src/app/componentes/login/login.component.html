@@ -1,0 +1,17 @@
+<div class="login-wrapper">
+  <main *ngIf="!isLoggedIn" class="login-container">
+    <section class="login-form">
+      <img loading="lazy" src="assets/images/Logo_full.png" class="logo" alt="iFeel Logo" />
+      <form (submit)="onLogin($event)">
+        <label for="username" class="visually-hidden">Username</label>
+        <input type="text" id="username" class="input-field" placeholder="Username" aria-label="Username" [(ngModel)]="username" name="username" />
+        <label for="password" class="visually-hidden">Password</label>
+        <input type="password" id="password" class="input-field" placeholder="Password" aria-label="Password" [(ngModel)]="password" name="password" />
+        <button type="submit" class="login-button">Iniciar sesión</button>
+      </form>
+      <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+    </section>
+  </main>
+
+  <app-chat *ngIf="isLoggedIn"></app-chat>
+</div>

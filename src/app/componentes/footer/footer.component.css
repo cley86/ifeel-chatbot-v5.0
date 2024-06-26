@@ -1,0 +1,23 @@
+.copyright-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    margin-top: 232px;
+    width: auto;
+    padding: 12px 30px; /* Reduce el padding para hacer la franja más delgada */
+  }
+  
+  .copyright-text {
+    color: #000;
+    text-align: center;
+    font: 400 16px 'Open Sans', sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .copyright-footer {
+      margin-top: 40px;
+      padding: 12px 10px; /* Reduce el padding para dispositivos móviles */
+    }
+  }
+  

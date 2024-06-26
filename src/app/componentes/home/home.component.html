@@ -1,0 +1,26 @@
+<main class="landing-container" *ngIf="!showLogin">
+  <header class="header"></header>
+  <section class="content-wrapper">
+    <div class="content-container">
+      <div class="content-row">
+        <div class="text-column">
+          <div class="text-content">
+            <h1 class="main-title">¿Cómo te sientes hoy?</h1>
+            <p class="description">
+              Bienvenido a <strong>iFeel,</strong> tu espacio seguro en línea donde
+              tus emociones importan. Con nuestro asistente
+              emocional, puedes expresar cómo te sientes y
+              recibir apoyo inmediato.
+
+              Estamos aquí para escucharte y acompañarte.
+            </p>
+          </div>
+        </div>
+        <div class="image-column">
+          <img [src]="imageUrl" alt="iFeel emotional support illustration" class="hero-image" />
+        </div>
+      </div>
+    </div>
+    <button class="cta-button" (click)="onLoginClick()">Ingresar</button>
+  </section>
+</main>
