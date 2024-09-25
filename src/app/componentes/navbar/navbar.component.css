@@ -23,19 +23,29 @@
 }
 
 .nav-link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   text-decoration: none;
   padding: 10px;
 }
 
 .nav-button {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   border-radius: 100px;
   background-color: #ff0;
   color: #00bfff;
   padding: 12px 30px;
+  border: none;
+}
+
+.nav-button:active {
+  /* Estilos para cuando se hace clic en el botón */
+}
+
+.nav-button:hover {
+  background-color: #98ff98; /* Cambia el color de fondo al hacer hover */
+  color: #007aa3; /* Cambia el color del texto al hacer hover */
 }
 
 @media (max-width: 991px) {

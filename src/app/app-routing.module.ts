@@ -6,14 +6,14 @@ import { ChatComponent } from './componentes/chat/chat.component';
 import { RegisterComponent } from './componentes/register/register.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path:'login', component: LoginComponent},
-  {path:'chat', component: ChatComponent},
-  {path:'register', component: RegisterComponent}
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'chat', component: ChatComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

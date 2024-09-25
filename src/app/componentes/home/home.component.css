@@ -82,6 +82,15 @@
   cursor: pointer;
 }
 
+.cta-button:active {
+  /* Estilos para cuando se hace clic en el botón */
+}
+
+.cta-button:hover {
+  background-color: #ff0; /* Cambia el color de fondo al hacer hover */
+  color: #00bfff; /* Cambia el color del texto al hacer hover */
+}
+
 @media (max-width: 991px) {
   .header {
     max-width: 100%;
